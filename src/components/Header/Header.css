@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.main_header {
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+.logo {
+    height: 49px;
+    margin-top: auto;
+    margin-right: 10px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}

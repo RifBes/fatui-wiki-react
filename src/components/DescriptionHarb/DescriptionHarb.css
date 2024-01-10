@@ -1,0 +1,75 @@
+.Pierro,
+.Capitano,
+.Dottore,
+.Columbina,
+.Arlecchino,
+.Pulcinella,
+.Scaramouche,
+.Sandrone,
+.Signora,
+.Pantalone,
+.Tartaglia {
+    max-width: 700px;
+    height: auto;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.name_title {
+    font-size: 30px;
+}
+
+.blockquote {
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.blockquote cite {
+    display: block;
+    font-style: normal;
+    text-align: right;
+}
+
+.quote {
+    padding-bottom: 20px;
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.quoteFromWho {
+    float: right;
+    margin-right: 0;
+    font-style: normal;
+}
+
+.describe_char {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+    text-indent: 4%;
+}
+
+.btn {
+    font-family: inherit;
+    cursor: pointer;
+    font-size: inherit;
+    padding: 10px 15px;
+    background: transparent;
+    color: inherit;
+    border: 1px solid rgb(255, 54, 31);
+    border-radius: 10px;
+    align-self: flex-end;
+}
+
+.btn:hover {
+    background: rgb(53, 21, 20);
+}

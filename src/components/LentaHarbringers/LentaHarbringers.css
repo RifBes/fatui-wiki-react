@@ -1,0 +1,103 @@
+.grid-container-harb {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: auto;
+    gap: 1em;
+    width: 95%;
+    height: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: all 400ms;
+}
+
+.harb {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: var(--image_harb) center center; -- нестабильно
+    background-size: cover; */
+    transition: all 1s;
+}
+
+.harb::after {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    opacity: 0;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    background: black;
+    transition: all 900ms;
+    transform: translateY(40px);
+}
+
+.grid-container-harb:hover .harb {
+    filter: grayscale(100%) opacity(20%);
+}
+
+/*Вылезает надпись*/
+.harb:hover::after {
+    opacity: 1;
+    transition-delay: 100ms;
+    transform: translateY(0);
+}
+
+/*Только одно изображение светится, на которое навели*/
+.grid-container-harb .harb:hover {
+    filter: grayscale(0%) opacity(100%);
+}
+
+.grid-container-harb:has(.harb_0:hover) {
+    grid-template-columns: 3fr repeat(10, 1fr);
+}
+
+.grid-container-harb:has(.harb_1:hover) {
+    grid-template-columns: 1fr 3fr repeat(9, 1fr);
+}
+
+.grid-container-harb:has(.harb_2:hover) {
+    grid-template-columns: repeat(2, 1fr) 3fr repeat(8, 1fr);
+}
+
+.grid-container-harb:has(.harb_3:hover) {
+    grid-template-columns: repeat(3, 1fr) 3fr repeat(7, 1fr);
+}
+
+.grid-container-harb:has(.harb_4:hover) {
+    grid-template-columns: repeat(4, 1fr) 3fr repeat(6, 1fr);
+}
+
+.grid-container-harb:has(.harb_5:hover) {
+    grid-template-columns: repeat(5, 1fr) 3fr repeat(5, 1fr);
+}
+
+.grid-container-harb:has(.harb_6:hover) {
+    grid-template-columns: repeat(6, 1fr) 3fr repeat(4, 1fr);
+}
+
+.grid-container-harb:has(.harb_7:hover) {
+    grid-template-columns: repeat(7, 1fr) 3fr repeat(3, 1fr);
+}
+
+.grid-container-harb:has(.harb_8:hover) {
+    grid-template-columns: repeat(8, 1fr) 3fr repeat(2, 1fr);
+}
+
+.grid-container-harb:has(.harb_9:hover) {
+    grid-template-columns: repeat(9, 1fr) 3fr repeat(1, 1fr);
+}
+
+.grid-container-harb:has(.harb_11:hover) {
+    grid-template-columns: repeat(10, 1fr) 3fr;
+}
+
+.harb:nth-child(odd) {
+    transform: translateY(-20px);
+}
+
+.harb:nth-child(even) {
+    transform: translateY(20px);
+}
