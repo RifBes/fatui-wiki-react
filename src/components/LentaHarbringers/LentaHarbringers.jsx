@@ -4,7 +4,7 @@ import { useState } from 'react';
 import DescriptionHarb from '../DescriptionHarb/DescriptinoHarb.jsx';
 
 export default function LentaHarbringers() {
-    let [content, setContent] = useState('');
+    let [content, setContent] = useState(null);
 
     function handleClick(type) {
         setContent(<DescriptionHarb character={type} />);
