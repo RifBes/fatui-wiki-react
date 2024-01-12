@@ -3,19 +3,17 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0;
+    margin-top: 20px;
 }
 
 .main_header {
-    margin-bottom: 0;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: clamp(20px, 6vw, 40px);
 }
 
 .logo {
     height: 49px;
-    margin-top: auto;
-    margin-right: 10px;
 }
 
 .intro {

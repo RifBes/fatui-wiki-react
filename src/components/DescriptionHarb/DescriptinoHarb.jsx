@@ -8,7 +8,7 @@ export default function DescriptionHarb({ character }) {
     let myRef = createRef();
 
     const harbringer = info.find((a) => {
-        return a.id === character;
+        return a.name === character || a.id === character;
     });
 
     //прокрутка
@@ -19,8 +19,8 @@ export default function DescriptionHarb({ character }) {
 
     return (
         <>
-            <div ref={myRef} className={harbringer.id} id="char">
-                <h2 className="name_title">{harbringer.name}</h2>
+            <div ref={myRef} className={harbringer.name} id="char">
+                <h2 className="name_title">{harbringer.title}</h2>
                 <QuotesSection character={harbringer} />
                 <Describe mainInfo={harbringer.mainInfo} />
                 <button className="btn">Подробнее...</button>

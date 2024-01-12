@@ -30,13 +30,7 @@ export default function SliderHarbringers() {
     ];
     return (
         <>
-            <div className="slider">
-                <div className="slider-container">
-                    <div className="slider-images">
-                        <SliderImage slides={names} />
-                    </div>
-                </div>
-            </div>
+            <SliderImage slides={names} />
         </>
     );
 }
